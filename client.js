@@ -15,6 +15,13 @@ const connect = function () {
     conn.write("Name: LUL");
   });
 
+  conn.on("connect", () => {
+    conn.write("Move: up");
+    conn.write("Move: down");
+    conn.write("Move: left");
+    conn.write("Move: right");
+  });
+
   conn.on("data", (data) => {
     console.log("Server: ", data);
   });
