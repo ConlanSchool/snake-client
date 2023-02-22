@@ -1,5 +1,4 @@
-const { connect } = require("./client.js");
-const { setupInput } = require("./input");
+const connect = require("./client.js");
 
 const setupInput = function () {
   stdin.on("data", handleUserInput);
@@ -17,4 +16,8 @@ const handleUserInput = function (data) {
   } else {
     conn.write(data);
   }
+};
+
+module.exports = {
+  setupInput,
 };
