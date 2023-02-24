@@ -47,9 +47,9 @@ const handleUserInput = function (data) {
 
   //sssecret messages
   if (data === "l") {
-    connection.write("LUL");
+    connection.write("Say: LUL");
   } else if (data === "f") {
-    connection.write("forsen");
+    connection.write("Say: forsen");
   }
 };
 
