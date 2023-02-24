@@ -12,6 +12,7 @@ const setupInput = function (conn) {
   return stdin;
 };
 
+//movement controls
 let upIntervalId;
 let leftIntervalId;
 let downIntervalId;
